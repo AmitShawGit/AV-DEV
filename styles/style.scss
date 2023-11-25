@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+$black: black;
+$white:#fff;
+/*button*/
+button {
+    padding: 10px 25px;
+}
+//* navbar */
+.navbar{
+    z-index: 9;
+    .navbar-brand{
+        filter: invert(2);
+    }
+   .nav-link{ color: $white;}
+}
+.hero-section {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: -10%;
+    text-transform: uppercase;
+    color: $white;
+    position: absolute;
+    // background: linear-gradient(rgba(0, 0, 0, 0.103), rgba(0, 0, 1, 0.678));
+    background: rgba(0, 0, 0, 0.64);
+    & * {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+    }
+
+    img {
+        z-index: -1;
+    }
+
+    p {
+        color: #FFF;
+        text-align: center;
+        font-size: 23px;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 6.785px;
+    }
+h1{
+font-size: 60px;
+font-weight: 300;
+}
+    button {
+        background-color: transparent;
+        border: transparent;
+        text-transform: capitalize;
+    }
+}
