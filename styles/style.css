@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +7,7 @@
 
 body {
   font-family: Montserrat;
+  overflow-x: hidden;
 }
 
 /*button*/
@@ -139,8 +140,8 @@ button {
   text-transform: uppercase;
 }
 .leading-section .right-section-text .underline {
-  width: 25%;
-  height: 3px;
+  width: 15%;
+  height: 1px;
   background-color: black;
   margin-bottom: 10px;
 }
@@ -173,8 +174,106 @@ button {
   line-height: normal;
   letter-spacing: 3.3px;
   text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
 }
 .leading-section .right-section-text a:hover {
   background-color: black;
   color: #ffffff;
+}
+.leading-section .horizonatal-text {
+  position: absolute;
+  right: -12%;
+  top: 40%;
+  transform: rotate(-90deg);
+  font-family: Inter;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 81.22px;
+  letter-spacing: 13.64px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(210, 206, 206, 0.6980392157);
+}
+
+/*dreamhouse wrapper*/
+.your-dream-house-wrapper {
+  padding-top: 10%;
+  position: relative;
+}
+.your-dream-house-wrapper p {
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 5.9px;
+  text-transform: uppercase;
+}
+.your-dream-house-wrapper .underline {
+  margin: 0 auto;
+  width: 10%;
+  height: 1px;
+  background-color: black;
+  margin-bottom: 10px;
+}
+.your-dream-house-wrapper h3 {
+  color: black;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 50.557px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+.your-dream-house-wrapper .card {
+  overflow: hidden;
+  z-index: 1;
+}
+.your-dream-house-wrapper .card .card-img {
+  transition: all 0.5s;
+}
+.your-dream-house-wrapper .card:hover .card-img {
+  transform: scale(1.2);
+}
+.your-dream-house-wrapper .card .card-img-overlay {
+  bottom: 0;
+  top: auto;
+}
+.your-dream-house-wrapper .card p {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.475px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.your-dream-house-wrapper .horizonatal-text {
+  position: absolute;
+  left: -12%;
+  top: 65%;
+  transform: rotate(-90deg);
+  font-family: Inter;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 81.22px;
+  letter-spacing: 13.64px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(210, 206, 206, 0.6980392157);
+}
+.your-dream-house-wrapper .bottom-image {
+  position: absolute;
+  bottom: -40%;
+  width: 100%;
+  height: 100%; /* Adjust as needed */
+  overflow: hidden;
+}
+.your-dream-house-wrapper .bottom-image img {
+  width: 100%;
+  height: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
