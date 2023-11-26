@@ -12,25 +12,56 @@ body {
 /*button*/
 button {
   padding: 10px 25px;
+  font-family: Montserrat;
+  border: transparent;
+  font-size: 15px;
+  letter-spacing: 3.375px;
 }
 
 .navbar {
   z-index: 9;
+  font-family: Raleway;
+}
+.navbar .container {
+  border-bottom: 1px solid rgb(143, 143, 143);
+  padding: 0 0 1rem 0;
 }
 .navbar .navbar-brand {
   filter: invert(2);
 }
-.navbar .nav-link {
-  color: #fff;
+.navbar .navbar-nav .nav-link {
+  color: #ffffff;
+  margin: 0 2.5rem 0 0;
+}
+.navbar .navbar-nav .nav-link .call-us {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.navbar .navbar-nav .nav-link .phone-icon {
+  margin: 0 15px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+.navbar .navbar-nav .nav-link .phone-icon img {
+  filter: invert(1);
+  width: 22px;
+  margin-top: 0.5em;
+}
+.navbar .navbar-nav .nav-item:last-child > .nav-link {
+  margin: 0;
 }
 
+/*Hero-section*/
 .hero-section {
   display: grid;
   place-items: center;
   text-align: center;
   margin-top: -10%;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   position: absolute;
   background: rgba(0, 0, 0, 0.64);
 }
@@ -52,9 +83,17 @@ button {
 .hero-section h1 {
   font-size: 60px;
   font-weight: 300;
+  padding: 10px 0;
 }
 .hero-section button {
+  margin-top: 0.5rem;
   background-color: transparent;
-  border: transparent;
-  text-transform: capitalize;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  color: #ffffff;
+}
+.hero-section button:hover {
+  background-color: #ffffff;
+  color: black;
 }/*# sourceMappingURL=style.css.map */

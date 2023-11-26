@@ -11,19 +11,66 @@ body {
 }
 
 $black: black;
-$white:#fff;
+$white: #ffffff;
+
 /*button*/
 button {
     padding: 10px 25px;
+    font-family: Montserrat;
+    border: transparent;
+    font-size: 15px;
+    letter-spacing: 3.375px;
 }
+
 //* navbar */
-.navbar{
+.navbar {
     z-index: 9;
-    .navbar-brand{
+    font-family: Raleway;
+
+    .container {
+        border-bottom: 1px solid rgb(143, 143, 143);
+        padding: 0 0 1rem 0;
+    }
+
+    .navbar-brand {
         filter: invert(2);
     }
-   .nav-link{ color: $white;}
+
+    .navbar-nav {
+        .nav-link {
+            color: $white;
+            margin: 0 2.5rem 0 0;
+.call-us{
+    text-transform: uppercase;
+    font-weight: 600;
 }
+            .phone-icon {
+                margin: 0 15px;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                border: 1px solid $white;
+                border-radius: 50%;
+
+                img {
+                    filter: invert(1);
+                    width: 22px;
+                    margin-top: 0.5em;
+
+                }
+
+            }
+
+        }
+
+        .nav-item:last-child>.nav-link {
+            margin: 0;
+        }
+    }
+}
+
+
+/*Hero-section*/
 .hero-section {
     display: grid;
     place-items: center;
@@ -32,8 +79,8 @@ button {
     text-transform: uppercase;
     color: $white;
     position: absolute;
-    // background: linear-gradient(rgba(0, 0, 0, 0.103), rgba(0, 0, 1, 0.678));
     background: rgba(0, 0, 0, 0.64);
+
     & * {
         grid-column: 1/-1;
         grid-row: 1/-1;
@@ -44,6 +91,7 @@ button {
     }
 
     p {
+
         color: #FFF;
         text-align: center;
         font-size: 23px;
@@ -51,13 +99,27 @@ button {
         line-height: normal;
         letter-spacing: 6.785px;
     }
-h1{
-font-size: 60px;
-font-weight: 300;
-}
+
+    h1 {
+        font-size: 60px;
+        font-weight: 300;
+        padding: 10px 0;
+    }
+
     button {
+        margin-top: 0.5rem;
         background-color: transparent;
-        border: transparent;
-        text-transform: capitalize;
+        border: 1px solid $white;
+        text-transform: uppercase;
+        transition: all 0.2s;
+        color: $white ;
+
+
+
+
+        &:hover {
+            background-color: $white;
+            color: $black;
+        }
     }
 }
