@@ -40,10 +40,12 @@ button {
         .nav-link {
             color: $white;
             margin: 0 2.5rem 0 0;
-.call-us{
-    text-transform: uppercase;
-    font-weight: 600;
-}
+
+            .call-us {
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
             .phone-icon {
                 margin: 0 15px;
                 width: 40px;
@@ -76,6 +78,7 @@ button {
     place-items: center;
     text-align: center;
     margin-top: -10%;
+    position: relative;
     text-transform: uppercase;
     color: $white;
     background: rgba(0, 0, 0, 0.64);
@@ -124,10 +127,39 @@ button {
 }
 
 /*lead section*/
-.lead-section{
-    .silver-rectangle{
-        width: 608px;
+.leading-section {
+    position: relative;
+
+    .silver-rectangle {
+        width: 35%;
         height: 395px;
         flex-shrink: 0;
+        background: #F1F1F1;
+        ;
+        z-index: -1;
+        position: absolute;
+    }
+
+    .left-side-img {
+        position: relative;
+
+        height: 100vh;
+
+        img {
+            position: absolute;
+        }
+
+        & img:first-child {
+            top: 15%;
+        }
+
+        & img:nth-child(2) {
+            bottom: -10%;
+            right: 0;
+        }
+
+        & img:last-child {
+            bottom: -9%;
+        }
     }
 }

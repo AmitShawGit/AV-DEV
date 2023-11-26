@@ -60,6 +60,7 @@ button {
   place-items: center;
   text-align: center;
   margin-top: -10%;
+  position: relative;
   text-transform: uppercase;
   color: #ffffff;
   background: rgba(0, 0, 0, 0.64);
@@ -98,8 +99,31 @@ button {
 }
 
 /*lead section*/
-.lead-section .silver-rectangle {
-  width: 608px;
+.leading-section {
+  position: relative;
+}
+.leading-section .silver-rectangle {
+  width: 35%;
   height: 395px;
   flex-shrink: 0;
+  background: #F1F1F1;
+  z-index: -1;
+  position: absolute;
+}
+.leading-section .left-side-img {
+  position: relative;
+  height: 100vh;
+}
+.leading-section .left-side-img img {
+  position: absolute;
+}
+.leading-section .left-side-img img:first-child {
+  top: 15%;
+}
+.leading-section .left-side-img img:nth-child(2) {
+  bottom: -10%;
+  right: 0;
+}
+.leading-section .left-side-img img:last-child {
+  bottom: -9%;
 }/*# sourceMappingURL=style.css.map */
