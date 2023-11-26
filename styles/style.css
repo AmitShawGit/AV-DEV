@@ -62,7 +62,6 @@ button {
   margin-top: -10%;
   text-transform: uppercase;
   color: #ffffff;
-  position: absolute;
   background: rgba(0, 0, 0, 0.64);
 }
 .hero-section * {
@@ -96,4 +95,11 @@ button {
 .hero-section button:hover {
   background-color: #ffffff;
   color: black;
+}
+
+/*lead section*/
+.lead-section .silver-rectangle {
+  width: 608px;
+  height: 395px;
+  flex-shrink: 0;
 }/*# sourceMappingURL=style.css.map */

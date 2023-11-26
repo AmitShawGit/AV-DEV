@@ -78,7 +78,6 @@ button {
     margin-top: -10%;
     text-transform: uppercase;
     color: $white;
-    position: absolute;
     background: rgba(0, 0, 0, 0.64);
 
     & * {
@@ -121,5 +120,14 @@ button {
             background-color: $white;
             color: $black;
         }
+    }
+}
+
+/*lead section*/
+.lead-section{
+    .silver-rectangle{
+        width: 608px;
+        height: 395px;
+        flex-shrink: 0;
     }
 }
