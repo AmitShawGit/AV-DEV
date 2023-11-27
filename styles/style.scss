@@ -146,7 +146,9 @@ button {
     .left-side-img {
         position: relative;
 
-        height: 100vh;
+        min-height: 100vh;
+        min-height: 100dvh;
+       
 
         img {
             position: absolute;
@@ -334,4 +336,23 @@ z-index: 1;
     object-fit: cover;
     z-index: -1;
 }
+}
+
+/*review*/
+.review-wrapper{
+display: grid;
+place-items: center;
+justify-content: center;
+text-transform: uppercase;
+text-align: center;
+color: $white;
+&  *{
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+}
+img{
+    z-index: -1;
+    
+}
+
 }

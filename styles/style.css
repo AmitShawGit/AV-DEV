@@ -113,7 +113,8 @@ button {
 }
 .leading-section .left-side-img {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 .leading-section .left-side-img img {
   position: absolute;
@@ -275,5 +276,22 @@ button {
   height: 75%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -1;
+}
+
+/*review*/
+.review-wrapper {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+.review-wrapper * {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+.review-wrapper img {
   z-index: -1;
 }/*# sourceMappingURL=style.css.map */
