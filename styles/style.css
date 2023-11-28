@@ -123,7 +123,7 @@ button {
   color: black;
 }
 
-/*lead section*/
+/* LEADING WRAPPER*/
 .leading-wrapper {
   position: relative;
 }
@@ -229,6 +229,7 @@ button {
   position: relative;
 }
 .your-dream-house-wrapper p {
+  font-family: Montserrat;
   color: black;
   font-size: 20px;
   font-weight: 300;
@@ -237,12 +238,13 @@ button {
 }
 .your-dream-house-wrapper .underline {
   margin: 0 auto;
-  width: 10%;
+  width: 8%;
   height: 1px;
   background-color: black;
   margin-bottom: 10px;
 }
 .your-dream-house-wrapper h3 {
+  font-family: Montserrat;
   color: black;
   font-size: 42px;
   font-style: normal;
@@ -266,6 +268,7 @@ button {
   top: auto;
 }
 .your-dream-house-wrapper .card p {
+  font-family: Montserrat;
   color: #ffffff;
   font-size: 20px;
   font-style: normal;
@@ -305,7 +308,7 @@ button {
   z-index: -1;
 }
 
-/*review*/
+/* REVIEW WRAPPER */
 .review-wrapper {
   background: url("../img/reviewbg.png");
   background-size: cover;
@@ -313,11 +316,13 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-  padding-top: 10%;
+  margin-top: 5%;
+  padding-top: 5%;
   padding-bottom: 10%;
+  position: relative;
 }
 .review-wrapper .content-wrapper p {
-  color: #FFF;
+  color: #ffffff;
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
@@ -327,7 +332,7 @@ button {
   text-transform: uppercase;
 }
 .review-wrapper .content-wrapper h4 {
-  color: #FFF;
+  color: #ffffff;
   font-family: Montserrat;
   font-size: 42px;
   font-style: normal;
@@ -394,16 +399,48 @@ button {
   right: -50px;
   bottom: 13px;
 }
+.review-wrapper .owl-nav {
+  display: block !important;
+}
+.review-wrapper .owl-nav .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: -6%;
+  color: #ffffff !important;
+  font-size: 60px !important;
+}
+.review-wrapper .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  right: -6%;
+  color: #ffffff !important;
+  font-size: 60px !important;
+}
+.review-wrapper .horizonatal-text {
+  position: absolute;
+  right: -20%;
+  top: 40%;
+  transform: rotate(-90deg);
+  font-family: Inter;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 81.22px;
+  letter-spacing: 13.64px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(210, 206, 206, 0.1019607843);
+}
 
 /* we are social */
-.social-section {
+.social-wrapper {
   background: url("../img/socialbg.png");
   height: auto;
   text-align: center;
   position: relative;
   padding: 5rem;
 }
-.social-section h5 {
+.social-wrapper h5 {
   padding-bottom: 3rem;
   color: black;
   text-align: center;
@@ -415,7 +452,7 @@ button {
   letter-spacing: 2.1px;
   text-transform: uppercase;
 }
-.social-section .horizonatal-text {
+.social-wrapper .horizonatal-text {
   position: absolute;
   left: -8%;
   top: 50%;
@@ -490,8 +527,9 @@ button {
   margin-right: 3%;
 }
 .footer-wrapper .container .card {
-  padding: 5% 1%;
+  padding: 5% 1% 6% 0;
   box-shadow: 0px 3.62803px 67.1186px 0px rgba(145, 162, 172, 0.5098039216);
+  border-radius: 0;
 }
 .footer-wrapper .container .card .form-control {
   border: 0;
@@ -501,6 +539,20 @@ button {
 }
 .footer-wrapper .container .card .form-control:focus {
   box-shadow: 0 0;
+}
+.footer-wrapper .container .card input::-moz-placeholder {
+  color: #676970;
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 27px;
+}
+.footer-wrapper .container .card input::placeholder {
+  color: #676970;
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 27px;
 }
 .footer-wrapper .container .card input[type=submit] {
   background: black;
@@ -527,4 +579,5 @@ button {
 }
 .footer-wrapper .container .copyright-section p {
   text-align: center;
+  color: #6A6B70;
 }/*# sourceMappingURL=style.css.map */

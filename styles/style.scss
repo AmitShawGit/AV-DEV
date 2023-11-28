@@ -154,7 +154,8 @@ button {
 }
 
 
-/*lead section*/
+/* LEADING WRAPPER*/
+
 .leading-wrapper {
     position: relative;
 
@@ -171,12 +172,15 @@ button {
     .left-side-img {
         position: relative;
         min-height: 100dvh;
+
         img {
             position: absolute;
         }
+
         & img:first-child {
             top: 15%;
         }
+
         & img:nth-child(2) {
             bottom: -10%;
             right: 0;
@@ -264,7 +268,6 @@ button {
         text-transform: uppercase;
         color: transparent;
         -webkit-text-stroke: 1px $stroke;
-
     }
 }
 
@@ -275,6 +278,7 @@ button {
     position: relative;
 
     p {
+        font-family: Montserrat;
         color: $black;
         font-size: 20px;
         font-weight: 300;
@@ -284,13 +288,14 @@ button {
 
     .underline {
         margin: 0 auto;
-        width: 10%;
+        width: 8%;
         height: 1px;
         background-color: $black;
         margin-bottom: 10px;
     }
 
     h3 {
+        font-family: Montserrat;
         color: $black;
         font-size: 42px;
         font-style: normal;
@@ -318,6 +323,7 @@ button {
         }
 
         p {
+            font-family: Montserrat;
             color: $white;
             font-size: 20px;
             font-style: normal;
@@ -362,21 +368,24 @@ button {
     }
 }
 
-/*review*/
+/* REVIEW WRAPPER */
+
 .review-wrapper {
     background: url("../img/reviewbg.png");
-
     background-size: cover;
     height: auto;
     text-transform: uppercase;
     text-align: center;
     color: $white;
-    padding-top: 10%;
+    margin-top: 5%;
+    padding-top: 5%;
     padding-bottom: 10%;
+    position: relative;
 
     .content-wrapper {
         p {
-            color: #FFF;
+
+            color: $white;
             font-family: Montserrat;
             font-size: 20px;
             font-style: normal;
@@ -387,7 +396,7 @@ button {
         }
 
         h4 {
-            color: #FFF;
+            color: $white;
             font-family: Montserrat;
             font-size: 42px;
             font-style: normal;
@@ -475,11 +484,45 @@ button {
         }
     }
 
+    .owl-nav {
+        display: block !important;
+
+        .owl-prev {
+            position: absolute;
+            top: 50%;
+            left: -6%;
+            color: $white !important;
+            font-size: 60px !important;
+        }
+
+        .owl-next {
+            position: absolute;
+            top: 50%;
+            right: -6%;
+            color: $white !important;
+            font-size: 60px !important;
+        }
+    }
+
+    .horizonatal-text {
+        position: absolute;
+        right: -20%;
+        top: 40%;
+        transform: rotate(-90deg);
+        font-family: Inter;
+        font-size: 62px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 81.22px;
+        letter-spacing: 13.64px;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 1px #D2CECE1A;
+    }
 }
 
 /* we are social */
-
-.social-section {
+.social-wrapper {
     background: url('../img/socialbg.png');
     height: auto;
     text-align: center;
@@ -587,11 +630,10 @@ button {
         }
 
 
-
         .card {
-            padding: 5% 1%;
+            padding: 5% 1% 6% 0;
             box-shadow: 0px 3.62803px 67.1186px 0px #91a2ac82;
-
+            border-radius: 0;
 
             .form-control {
                 border: 0;
@@ -601,6 +643,17 @@ button {
 
                 &:focus {
                     box-shadow: 0 0;
+                }
+            }
+
+            input {
+                &::placeholder {
+                    color: #676970;
+                    font-family: Raleway;
+                    font-size: 15px;
+
+                    font-weight: 300;
+                    line-height: 27px;
                 }
             }
 
@@ -633,6 +686,7 @@ button {
 
             p {
                 text-align: center;
+                color: #6A6B70;
             }
         }
     }
