@@ -291,6 +291,33 @@ button {
   padding-top: 10%;
   padding-bottom: 10%;
 }
+.review-wrapper .content-wrapper p {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 5.9px;
+  text-transform: uppercase;
+}
+.review-wrapper .content-wrapper h4 {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 50.557px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+.review-wrapper .underline {
+  margin: 0 auto;
+  width: 5%;
+  height: 1px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
 .review-wrapper .item .user-img {
   width: 30%;
   margin-left: 10%;
@@ -311,6 +338,7 @@ button {
   font-style: italic;
   font-weight: 300;
   line-height: 30px;
+  text-transform: capitalize;
 }
 .review-wrapper .item .content .card .card-body img {
   position: absolute;
