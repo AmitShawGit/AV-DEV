@@ -455,3 +455,154 @@ button {
     }
 
 }
+
+/* we are social */
+
+.social-section {
+    background: url('../img/socialbg.png');
+    height: auto;
+    text-align: center;
+    position: relative;
+    padding: 5rem;
+
+    h5 {
+        padding-bottom: 3rem;
+        color: $black;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 50.557px;
+        letter-spacing: 2.1px;
+        text-transform: uppercase;
+    }
+
+    .horizonatal-text {
+        position: absolute;
+        left: -8%;
+        top: 50%;
+        transform: rotate(-90deg);
+        font-family: Inter;
+        font-size: 62px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 81.22px;
+        letter-spacing: 13.64px;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 1px $stroke;
+
+    }
+
+}
+
+/* footer */
+.footer-wrapper {
+    display: grid;
+    background: $black;
+    color: $white;
+    place-items: center;
+    justify-content: center;
+
+    &>* {
+        grid-row: 1/-1;
+        grid-column: 1/-1;
+    }
+
+    img {
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    .container {
+        z-index: 2;
+
+        h6 {
+
+            font-family: Montserrat;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 49.927px;
+            letter-spacing: 2.1px;
+            text-transform: uppercase;
+        }
+
+        p {
+
+            font-family: Raleway;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 27px;
+        }
+
+        .contact {
+            a {
+                color: #FFF;
+                font-family: Raleway;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 27px;
+                text-decoration: none;
+
+                .fa-solid {
+                    margin-right: 2%;
+                    padding-top: 10px;
+                    text-align: center;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid $white;
+                    border-radius: 50%;
+                    align-items: center;
+                }
+
+                img {
+                    margin-right: 3%;
+                }
+            }
+        }
+
+      
+
+        .card {
+            padding: 5% 1%;
+            box-shadow: 0px 3.62803px 67.1186px 0px #91a2ac82;
+
+           
+            .form-control {
+                border: 0;
+                border-bottom: 1px solid silver;
+                border-radius: 0;
+                margin: 0px 0 15px 0;
+
+                &:focus {
+                    box-shadow: 0 0;
+                }
+            }
+
+            input[type="submit"] {
+                background: $black;
+                color: $white;
+                text-align: center;
+                width: 100%;
+                outline: none;
+                border: none;
+                padding: 3%;
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 4.425px;
+                text-transform: uppercase;
+            }
+            textarea{
+                resize: none;
+            }
+
+        }
+    }
+}

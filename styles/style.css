@@ -368,4 +368,131 @@ button {
   position: absolute;
   right: -50px;
   bottom: 13px;
+}
+
+/* we are social */
+.social-section {
+  background: url("../img/socialbg.png");
+  height: auto;
+  text-align: center;
+  position: relative;
+  padding: 5rem;
+}
+.social-section h5 {
+  padding-bottom: 3rem;
+  color: black;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 50.557px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+.social-section .horizonatal-text {
+  position: absolute;
+  left: -8%;
+  top: 50%;
+  transform: rotate(-90deg);
+  font-family: Inter;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 81.22px;
+  letter-spacing: 13.64px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(210, 206, 206, 0.6980392157);
+}
+
+/* footer */
+.footer-wrapper {
+  display: grid;
+  background: black;
+  color: #ffffff;
+  place-items: center;
+  justify-content: center;
+}
+.footer-wrapper > * {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+.footer-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+.footer-wrapper .container {
+  z-index: 2;
+}
+.footer-wrapper .container h6 {
+  font-family: Montserrat;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 49.927px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+.footer-wrapper .container p {
+  font-family: Raleway;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 27px;
+}
+.footer-wrapper .container .contact a {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 27px;
+  text-decoration: none;
+}
+.footer-wrapper .container .contact a .fa-solid {
+  margin-right: 2%;
+  padding-top: 10px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  align-items: center;
+}
+.footer-wrapper .container .contact a img {
+  margin-right: 3%;
+}
+.footer-wrapper .container .card {
+  padding: 5% 1%;
+  box-shadow: 0px 3.62803px 67.1186px 0px rgba(145, 162, 172, 0.5098039216);
+}
+.footer-wrapper .container .card .form-control {
+  border: 0;
+  border-bottom: 1px solid silver;
+  border-radius: 0;
+  margin: 0px 0 15px 0;
+}
+.footer-wrapper .container .card .form-control:focus {
+  box-shadow: 0 0;
+}
+.footer-wrapper .container .card input[type=submit] {
+  background: black;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 3%;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4.425px;
+  text-transform: uppercase;
+}
+.footer-wrapper .container .card textarea {
+  resize: none;
 }/*# sourceMappingURL=style.css.map */
