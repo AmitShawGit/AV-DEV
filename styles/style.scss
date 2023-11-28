@@ -25,7 +25,8 @@ button {
     letter-spacing: 3.375px;
 }
 
-//* navbar */
+/* NAVBAR */
+
 .navbar {
     z-index: 9;
     font-family: Raleway;
@@ -43,10 +44,26 @@ button {
         .nav-link {
             color: $white;
             margin: 0 2.5rem 0 0;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.72px;
 
             .call-us {
                 text-transform: uppercase;
-                font-weight: 600;
+                font-weight: 700;
+                font-size: 12px;
+                letter-spacing: 1.38px;
+
+                p {
+                    margin: 0;
+                    padding-top: 14px;
+                }
+            }
+
+            .number {
+                p {
+                    letter-spacing: 1.44px;
+                }
             }
 
             .phone-icon {
@@ -75,8 +92,9 @@ button {
 }
 
 
-/*Hero-section*/
-.hero-section {
+/*HERO-WRAPPER*/
+
+.hero-wrapper {
     display: grid;
     place-items: center;
     text-align: center;
@@ -96,8 +114,9 @@ button {
     }
 
     p {
-
-        color: #FFF;
+        margin-top: 4%;
+        font-family: Montserrat;
+        color: $white;
         text-align: center;
         font-size: 23px;
         font-weight: 300;
@@ -109,18 +128,23 @@ button {
         font-size: 60px;
         font-weight: 300;
         padding: 10px 0;
+        font-family: Montserrat;
+        margin-bottom: 3%;
     }
 
-    button {
+    a {
         margin-top: 0.5rem;
         background-color: transparent;
         border: 1px solid $white;
         text-transform: uppercase;
         transition: all 0.2s;
         color: $white ;
-
-
-
+        font-family: Montserrat;
+        font-size: 15px;
+        letter-spacing: 3.375px;
+        font-weight: 500;
+        padding: 2% 2%;
+        text-decoration: none;
 
         &:hover {
             background-color: $white;
@@ -129,8 +153,9 @@ button {
     }
 }
 
+
 /*lead section*/
-.leading-section {
+.leading-wrapper {
     position: relative;
 
     .silver-rectangle {
@@ -145,19 +170,13 @@ button {
 
     .left-side-img {
         position: relative;
-
-        min-height: 100vh;
         min-height: 100dvh;
-
-
         img {
             position: absolute;
         }
-
         & img:first-child {
             top: 15%;
         }
-
         & img:nth-child(2) {
             bottom: -10%;
             right: 0;
@@ -172,6 +191,7 @@ button {
         margin-top: 17%;
 
         p:first-child {
+            font-family: Montserrat;
             text-transform: uppercase;
             color: $black;
             font-size: 20px;
@@ -189,6 +209,7 @@ button {
 
 
         h2 {
+            font-family: Montserrat;
             color: $black;
             font-size: 42px;
             font-weight: 300;
@@ -565,13 +586,13 @@ button {
             }
         }
 
-      
+
 
         .card {
             padding: 5% 1%;
             box-shadow: 0px 3.62803px 67.1186px 0px #91a2ac82;
 
-           
+
             .form-control {
                 border: 0;
                 border-bottom: 1px solid silver;
@@ -599,17 +620,22 @@ button {
                 letter-spacing: 4.425px;
                 text-transform: uppercase;
             }
-            textarea{
+
+            textarea {
                 resize: none;
             }
 
         }
-        .copyright-section{
+
+        .copyright-section {
             margin-top: 5%;
             margin-bottom: -14%;
-            p{
+
+            p {
                 text-align: center;
             }
-         }
+        }
     }
 }
+
+@import url('./_responsive.scss');

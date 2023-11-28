@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+@import url("./_responsive.scss");
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +20,7 @@ button {
   letter-spacing: 3.375px;
 }
 
+/* NAVBAR */
 .navbar {
   z-index: 9;
   font-family: Raleway;
@@ -33,10 +35,22 @@ button {
 .navbar .navbar-nav .nav-link {
   color: #ffffff;
   margin: 0 2.5rem 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.72px;
 }
 .navbar .navbar-nav .nav-link .call-us {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1.38px;
+}
+.navbar .navbar-nav .nav-link .call-us p {
+  margin: 0;
+  padding-top: 14px;
+}
+.navbar .navbar-nav .nav-link .number p {
+  letter-spacing: 1.44px;
 }
 .navbar .navbar-nav .nav-link .phone-icon {
   margin: 0 15px;
@@ -55,8 +69,8 @@ button {
   margin: 0;
 }
 
-/*Hero-section*/
-.hero-section {
+/*HERO-WRAPPER*/
+.hero-wrapper {
   display: grid;
   place-items: center;
   text-align: center;
@@ -66,44 +80,54 @@ button {
   color: #ffffff;
   background: rgba(0, 0, 0, 0.64);
 }
-.hero-section * {
+.hero-wrapper * {
   grid-column: 1/-1;
   grid-row: 1/-1;
 }
-.hero-section img {
+.hero-wrapper img {
   z-index: -1;
 }
-.hero-section p {
-  color: #FFF;
+.hero-wrapper p {
+  margin-top: 4%;
+  font-family: Montserrat;
+  color: #ffffff;
   text-align: center;
   font-size: 23px;
   font-weight: 300;
   line-height: normal;
   letter-spacing: 6.785px;
 }
-.hero-section h1 {
+.hero-wrapper h1 {
   font-size: 60px;
   font-weight: 300;
   padding: 10px 0;
+  font-family: Montserrat;
+  margin-bottom: 3%;
 }
-.hero-section button {
+.hero-wrapper a {
   margin-top: 0.5rem;
   background-color: transparent;
   border: 1px solid #ffffff;
   text-transform: uppercase;
   transition: all 0.2s;
   color: #ffffff;
+  font-family: Montserrat;
+  font-size: 15px;
+  letter-spacing: 3.375px;
+  font-weight: 500;
+  padding: 2% 2%;
+  text-decoration: none;
 }
-.hero-section button:hover {
+.hero-wrapper a:hover {
   background-color: #ffffff;
   color: black;
 }
 
 /*lead section*/
-.leading-section {
+.leading-wrapper {
   position: relative;
 }
-.leading-section .silver-rectangle {
+.leading-wrapper .silver-rectangle {
   width: 35%;
   height: 395px;
   flex-shrink: 0;
@@ -111,28 +135,28 @@ button {
   z-index: -1;
   position: absolute;
 }
-.leading-section .left-side-img {
+.leading-wrapper .left-side-img {
   position: relative;
-  min-height: 100vh;
   min-height: 100dvh;
 }
-.leading-section .left-side-img img {
+.leading-wrapper .left-side-img img {
   position: absolute;
 }
-.leading-section .left-side-img img:first-child {
+.leading-wrapper .left-side-img img:first-child {
   top: 15%;
 }
-.leading-section .left-side-img img:nth-child(2) {
+.leading-wrapper .left-side-img img:nth-child(2) {
   bottom: -10%;
   right: 0;
 }
-.leading-section .left-side-img img:last-child {
+.leading-wrapper .left-side-img img:last-child {
   bottom: -10%;
 }
-.leading-section .right-section-text {
+.leading-wrapper .right-section-text {
   margin-top: 17%;
 }
-.leading-section .right-section-text p:first-child {
+.leading-wrapper .right-section-text p:first-child {
+  font-family: Montserrat;
   text-transform: uppercase;
   color: black;
   font-size: 20px;
@@ -140,13 +164,14 @@ button {
   letter-spacing: 5.9px;
   text-transform: uppercase;
 }
-.leading-section .right-section-text .underline {
+.leading-wrapper .right-section-text .underline {
   width: 15%;
   height: 1px;
   background-color: black;
   margin-bottom: 10px;
 }
-.leading-section .right-section-text h2 {
+.leading-wrapper .right-section-text h2 {
+  font-family: Montserrat;
   color: black;
   font-size: 42px;
   font-weight: 300;
@@ -154,7 +179,7 @@ button {
   letter-spacing: 2.1px;
   text-transform: uppercase;
 }
-.leading-section .right-section-text p {
+.leading-wrapper .right-section-text p {
   color: #808695;
   font-family: Raleway;
   font-size: 16px;
@@ -162,7 +187,7 @@ button {
   font-weight: 300;
   line-height: 29px;
 }
-.leading-section .right-section-text a {
+.leading-wrapper .right-section-text a {
   border: 1px solid black;
   text-transform: uppercase;
   transition: all 0.2s;
@@ -178,11 +203,11 @@ button {
   margin-top: 1rem;
   display: inline-block;
 }
-.leading-section .right-section-text a:hover {
+.leading-wrapper .right-section-text a:hover {
   background-color: black;
   color: #ffffff;
 }
-.leading-section .horizonatal-text {
+.leading-wrapper .horizonatal-text {
   position: absolute;
   right: -12%;
   top: 40%;
