@@ -495,4 +495,11 @@ button {
 }
 .footer-wrapper .container .card textarea {
   resize: none;
+}
+.footer-wrapper .container .copyright-section {
+  margin-top: 5%;
+  margin-bottom: -14%;
+}
+.footer-wrapper .container .copyright-section p {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
