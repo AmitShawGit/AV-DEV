@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
-@import url("./_responsive.scss");
 * {
   margin: 0;
   padding: 0;
@@ -467,6 +466,9 @@ button {
   color: transparent;
   -webkit-text-stroke: 1px rgba(210, 206, 206, 0.6980392157);
 }
+.social-wrapper .social-video {
+  cursor: pointer;
+}
 
 /* footer */
 .footer-wrapper {
@@ -580,4 +582,13 @@ button {
 .footer-wrapper .container .copyright-section p {
   text-align: center;
   color: #6A6B70;
+}
+
+/*MODAL*/
+.modal-body {
+  height: 400px;
+}
+.modal-body iframe {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
