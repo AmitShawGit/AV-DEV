@@ -426,6 +426,9 @@ h3 {
   color: #ffffff;
   place-items: center;
   justify-content: center;
+  background-image: url("/img/formbg.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .footer-wrapper > * {
   grid-row: 1/-1;
@@ -493,7 +496,7 @@ h3 {
 }
 .footer-wrapper .container .card .form-control {
   border: 0;
-  border-bottom: 1px solid silver;
+  border-bottom: 1px solid #d0d0d0;
   border-radius: 0;
   margin: 0px 0 15px 0;
 }
@@ -537,6 +540,7 @@ h3 {
   margin-top: 5%;
   margin-bottom: -14%;
   text-align: center;
+  text-transform: uppercase;
 }
 .footer-wrapper .container .copyright-section span {
   color: #6A6B70;
