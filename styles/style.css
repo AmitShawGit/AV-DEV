@@ -11,12 +11,67 @@ body {
 }
 
 /*button*/
-button {
-  padding: 10px 25px;
+.btn {
+  margin-top: 0.5rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  min-width: 200px;
   font-family: Montserrat;
-  border: transparent;
   font-size: 15px;
   letter-spacing: 3.375px;
+  font-weight: 500;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 0;
+}
+
+/*Heading*/
+h2 {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 5.9px;
+  text-transform: uppercase;
+}
+h2::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  min-width: 10%;
+  bottom: -18px;
+  height: 1px;
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+/*sub heading*/
+h3 {
+  font-family: Montserrat;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 50.557px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+
+/*  horizonatal-text*/
+.horizonatal-text {
+  position: absolute;
+  font-family: Inter;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 81.22px;
+  letter-spacing: 13.64px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(210, 206, 206, 0.6980392157);
+  transform: rotate(-90deg);
 }
 
 /* NAVBAR */
@@ -38,31 +93,46 @@ button {
   font-weight: 400;
   letter-spacing: 0.72px;
 }
-.navbar .navbar-nav .nav-link .call-us {
+.navbar .navbar-nav .nav-item:last-child {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-nav .nav-item:last-child .ri-phone-line {
+  color: #ffffff;
+  width: 22px;
+  position: relative;
+}
+.navbar .navbar-nav .nav-item:last-child .ri-phone-line::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+.navbar .navbar-nav .nav-item:last-child .call-us {
+  margin-left: 5px;
+}
+.navbar .navbar-nav .nav-item:last-child .call-us p {
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 1.38px;
-}
-.navbar .navbar-nav .nav-link .call-us p {
   margin: 0;
-  padding-top: 14px;
 }
-.navbar .navbar-nav .nav-link .number p {
+.navbar .navbar-nav .nav-item:last-child .call-us p img {
+  filter: contrast(5.5);
+}
+.navbar .navbar-nav .nav-item:last-child .call-us .nav-link {
+  padding: 0;
+}
+.navbar .navbar-nav .nav-item:last-child .call-us .number p {
   letter-spacing: 1.44px;
-}
-.navbar .navbar-nav .nav-link .phone-icon {
-  margin: 0 15px;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-}
-.navbar .navbar-nav .nav-link .phone-icon img {
-  filter: invert(1);
-  width: 22px;
-  margin-top: 0.5em;
 }
 .navbar .navbar-nav .nav-item:last-child > .nav-link {
   margin: 0;
@@ -86,7 +156,7 @@ button {
 .hero-wrapper img {
   z-index: -1;
 }
-.hero-wrapper p {
+.hero-wrapper span {
   margin-top: 4%;
   font-family: Montserrat;
   color: #ffffff;
@@ -103,21 +173,11 @@ button {
   font-family: Montserrat;
   margin-bottom: 3%;
 }
-.hero-wrapper a {
-  margin-top: 0.5rem;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  text-transform: uppercase;
-  transition: all 0.2s;
+.hero-wrapper .btn {
   color: #ffffff;
-  font-family: Montserrat;
-  font-size: 15px;
-  letter-spacing: 3.375px;
-  font-weight: 500;
-  padding: 2% 2%;
-  text-decoration: none;
+  border: 1px solid #ffffff;
 }
-.hero-wrapper a:hover {
+.hero-wrapper .btn:hover {
   background-color: #ffffff;
   color: black;
 }
@@ -154,29 +214,16 @@ button {
 .leading-wrapper .right-section-text {
   margin-top: 17%;
 }
-.leading-wrapper .right-section-text p:first-child {
-  font-family: Montserrat;
-  text-transform: uppercase;
-  color: black;
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 5.9px;
-  text-transform: uppercase;
-}
-.leading-wrapper .right-section-text .underline {
-  width: 15%;
-  height: 1px;
-  background-color: black;
-  margin-bottom: 10px;
-}
 .leading-wrapper .right-section-text h2 {
-  font-family: Montserrat;
   color: black;
-  font-size: 42px;
-  font-weight: 300;
-  line-height: 55.02px;
-  letter-spacing: 2.1px;
-  text-transform: uppercase;
+  position: relative;
+}
+.leading-wrapper .right-section-text h2::after {
+  width: 15%;
+}
+.leading-wrapper .right-section-text h3 {
+  color: black;
+  margin-top: 15px;
 }
 .leading-wrapper .right-section-text p {
   color: #808695;
@@ -186,40 +233,17 @@ button {
   font-weight: 300;
   line-height: 29px;
 }
-.leading-wrapper .right-section-text a {
+.leading-wrapper .right-section-text .btn {
   border: 1px solid black;
-  text-transform: uppercase;
-  transition: all 0.2s;
   color: black;
-  padding: 10px 15px;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 3.3px;
-  text-decoration: none;
-  margin-top: 1rem;
-  display: inline-block;
 }
-.leading-wrapper .right-section-text a:hover {
+.leading-wrapper .right-section-text .btn:hover {
   background-color: black;
   color: #ffffff;
 }
 .leading-wrapper .horizonatal-text {
-  position: absolute;
   right: -12%;
   top: 40%;
-  transform: rotate(-90deg);
-  font-family: Inter;
-  font-size: 62px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 81.22px;
-  letter-spacing: 13.64px;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(210, 206, 206, 0.6980392157);
 }
 
 /*dreamhouse wrapper*/
@@ -227,20 +251,13 @@ button {
   padding-top: 10%;
   position: relative;
 }
-.your-dream-house-wrapper p {
-  font-family: Montserrat;
+.your-dream-house-wrapper h2 {
   color: black;
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 5.9px;
-  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 5px;
 }
-.your-dream-house-wrapper .underline {
-  margin: 0 auto;
-  width: 8%;
-  height: 1px;
-  background-color: black;
-  margin-bottom: 10px;
+.your-dream-house-wrapper h2::after {
+  left: 43%;
 }
 .your-dream-house-wrapper h3 {
   font-family: Montserrat;
@@ -266,7 +283,7 @@ button {
   bottom: 0;
   top: auto;
 }
-.your-dream-house-wrapper .card p {
+.your-dream-house-wrapper .card h4 {
   font-family: Montserrat;
   color: #ffffff;
   font-size: 20px;
@@ -277,26 +294,14 @@ button {
   text-transform: uppercase;
 }
 .your-dream-house-wrapper .horizonatal-text {
-  position: absolute;
   left: -12%;
   top: 65%;
-  transform: rotate(-90deg);
-  font-family: Inter;
-  font-size: 62px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 81.22px;
-  letter-spacing: 13.64px;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(210, 206, 206, 0.6980392157);
 }
 .your-dream-house-wrapper .bottom-image {
   position: absolute;
   bottom: -40%;
   width: 100%;
   height: 100%;
-  /* Adjust as needed */
   overflow: hidden;
 }
 .your-dream-house-wrapper .bottom-image img {

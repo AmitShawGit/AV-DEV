@@ -17,14 +17,67 @@ $fontColor: #808695;
 $stroke: #D2CECEB2;
 
 /*button*/
-button {
-    padding: 10px 25px;
+.btn {
+    margin-top: 0.5rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    min-width: 200px;
     font-family: Montserrat;
-    border: transparent;
     font-size: 15px;
     letter-spacing: 3.375px;
+    font-weight: 500;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 0;
+}
+/*Heading*/
+h2 {
+    color: $white;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 5.9px;
+    text-transform: uppercase;
+    &::after{
+        content: " ";
+        position: absolute;
+        display: block;
+        min-width: 10%;
+        bottom: -18px;
+        height: 1px;
+        background-color: $black;
+        margin-bottom: 10px;
+    }
 }
 
+/*sub heading*/
+h3{
+    font-family: Montserrat;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 50.557px;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    
+}
+/*  horizonatal-text*/
+.horizonatal-text{
+    position: absolute;
+    font-family: Inter;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 81.22px;
+    letter-spacing: 13.64px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px $stroke;
+    transform: rotate(-90deg);
+}
 /* NAVBAR */
 
 .navbar {
@@ -47,42 +100,61 @@ button {
             font-size: 16px;
             font-weight: 400;
             letter-spacing: 0.72px;
+        }
+
+        & .nav-item:last-child {
+            display: flex;
+            align-items: center;
+
+            .ri-phone-line {
+                color: $white;
+                width: 22px;
+                position: relative;
+
+                &::after {
+
+                    content: " ";
+                    position: absolute;
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid $white;
+                    border-radius: 50%;
+                    top: 50%;
+                    left: 35%;
+                    transform: translate(-50%, -50%);
+                }
+            }
 
             .call-us {
-                text-transform: uppercase;
-                font-weight: 700;
-                font-size: 12px;
-                letter-spacing: 1.38px;
+                margin-left: 5px;
 
                 p {
+                    color: $white;
+
+                    img {
+                        filter: contrast(5.5);
+                    }
+
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 12px;
+                    letter-spacing: 1.38px;
                     margin: 0;
-                    padding-top: 14px;
-                }
-            }
-
-            .number {
-                p {
-                    letter-spacing: 1.44px;
-                }
-            }
-
-            .phone-icon {
-                margin: 0 15px;
-                width: 40px;
-                height: 40px;
-                text-align: center;
-                border: 1px solid $white;
-                border-radius: 50%;
-
-                img {
-                    filter: invert(1);
-                    width: 22px;
-                    margin-top: 0.5em;
 
                 }
 
-            }
+                .nav-link {
+                    padding: 0;
+                }
 
+                .number {
+                    p {
+                        letter-spacing: 1.44px;
+                    }
+                }
+
+            }
         }
 
         .nav-item:last-child>.nav-link {
@@ -113,7 +185,7 @@ button {
         z-index: -1;
     }
 
-    p {
+    span {
         margin-top: 4%;
         font-family: Montserrat;
         color: $white;
@@ -132,19 +204,9 @@ button {
         margin-bottom: 3%;
     }
 
-    a {
-        margin-top: 0.5rem;
-        background-color: transparent;
-        border: 1px solid $white;
-        text-transform: uppercase;
-        transition: all 0.2s;
+    .btn {
         color: $white ;
-        font-family: Montserrat;
-        font-size: 15px;
-        letter-spacing: 3.375px;
-        font-weight: 500;
-        padding: 2% 2%;
-        text-decoration: none;
+        border: 1px solid $white;
 
         &:hover {
             background-color: $white;
@@ -194,32 +256,21 @@ button {
     .right-section-text {
         margin-top: 17%;
 
-        p:first-child {
-            font-family: Montserrat;
-            text-transform: uppercase;
-            color: $black;
-            font-size: 20px;
-            font-weight: 300;
-            letter-spacing: 5.9px;
-            text-transform: uppercase;
-        }
-
-        .underline {
-            width: 15%;
-            height: 1px;
-            background-color: $black;
-            margin-bottom: 10px;
-        }
-
-
         h2 {
-            font-family: Montserrat;
             color: $black;
-            font-size: 42px;
-            font-weight: 300;
-            line-height: 55.02px;
-            letter-spacing: 2.1px;
-            text-transform: uppercase;
+            position: relative;
+            &::after{
+              
+                width: 15%;
+                
+            }
+        }
+
+
+
+        h3 {      
+            color: $black;          
+            margin-top: 15px;         
         }
 
         p {
@@ -231,22 +282,9 @@ button {
             line-height: 29px;
         }
 
-        a {
+        .btn{
             border: 1px solid $black;
-            text-transform: uppercase;
-            transition: all 0.2s;
             color: $black ;
-            padding: 10px 15px;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 15px;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 3.3px;
-            text-decoration: none;
-            margin-top: 1rem;
-            display: inline-block;
-
             &:hover {
                 background-color: $black;
                 color: $white;
@@ -255,19 +293,8 @@ button {
     }
 
     .horizonatal-text {
-        position: absolute;
         right: -12%;
-        top: 40%;
-        transform: rotate(-90deg);
-        font-family: Inter;
-        font-size: 62px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 81.22px;
-        letter-spacing: 13.64px;
-        text-transform: uppercase;
-        color: transparent;
-        -webkit-text-stroke: 1px $stroke;
+        top: 40%;   
     }
 }
 
@@ -277,22 +304,19 @@ button {
     padding-top: 10%;
     position: relative;
 
-    p {
-        font-family: Montserrat;
+    h2 {
+        
         color: $black;
-        font-size: 20px;
-        font-weight: 300;
-        letter-spacing: 5.9px;
-        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 5px;
+        &::after{
+              
+         
+            left: 43%;
+        }
     }
 
-    .underline {
-        margin: 0 auto;
-        width: 8%;
-        height: 1px;
-        background-color: $black;
-        margin-bottom: 10px;
-    }
+   
 
     h3 {
         font-family: Montserrat;
@@ -322,7 +346,7 @@ button {
             top: auto;
         }
 
-        p {
+        h4 {
             font-family: Montserrat;
             color: $white;
             font-size: 20px;
@@ -334,21 +358,9 @@ button {
         }
     }
 
-    .horizonatal-text {
-        position: absolute;
+    .horizonatal-text {     
         left: -12%;
-        top: 65%;
-        transform: rotate(-90deg);
-        font-family: Inter;
-        font-size: 62px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 81.22px;
-        letter-spacing: 13.64px;
-        text-transform: uppercase;
-        color: transparent;
-        -webkit-text-stroke: 1px $stroke;
-
+        top: 65%;    
     }
 
     .bottom-image {
@@ -356,7 +368,6 @@ button {
         bottom: -40%;
         width: 100%;
         height: 100%;
-        /* Adjust as needed */
         overflow: hidden;
     }
 
@@ -558,9 +569,10 @@ button {
         -webkit-text-stroke: 1px $stroke;
 
     }
-.social-video{
-cursor: pointer;
-}
+
+    .social-video {
+        cursor: pointer;
+    }
 }
 
 /* footer */
@@ -693,11 +705,13 @@ cursor: pointer;
         }
     }
 }
- /*MODAL*/
- .modal-body{
+
+/*MODAL*/
+.modal-body {
     height: 400px;
-    iframe{
+
+    iframe {
         width: 100%;
         height: 100%;
     }
- }
+}
