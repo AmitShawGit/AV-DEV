@@ -405,7 +405,7 @@ h3 {
   padding: 5rem;
 }
 .social-wrapper h3 {
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   color: black;
 }
 .social-wrapper .horizonatal-text {
@@ -490,7 +490,7 @@ h3 {
   margin: 8px;
 }
 .footer-wrapper .container .card {
-  padding: 5% 1rem 6% 1rem;
+  padding: 5% 1.5rem 6% 1.5rem;
   box-shadow: 0px 3.62803px 67.1186px 0px rgba(145, 162, 172, 0.5098039216);
   border-radius: 0;
 }
