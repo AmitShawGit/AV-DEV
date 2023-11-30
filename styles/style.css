@@ -28,7 +28,6 @@ body {
 
 /*Heading*/
 h2 {
-  color: #ffffff;
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
@@ -57,6 +56,7 @@ h3 {
   line-height: 50.557px;
   letter-spacing: 2.1px;
   text-transform: uppercase;
+  margin-top: 20px;
 }
 
 /*  horizonatal-text*/
@@ -80,7 +80,7 @@ h3 {
   font-family: Raleway;
 }
 .navbar .container {
-  border-bottom: 1px solid rgb(143, 143, 143);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2196078431);
   padding: 0 0 1rem 0;
 }
 .navbar .navbar-brand {
@@ -115,23 +115,19 @@ h3 {
   transform: translate(-50%, -50%);
 }
 .navbar .navbar-nav .nav-item:last-child .call-us {
-  margin-left: 5px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
 }
-.navbar .navbar-nav .nav-item:last-child .call-us p {
+.navbar .navbar-nav .nav-item:last-child .call-us span {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 1.38px;
-  margin: 0;
-}
-.navbar .navbar-nav .nav-item:last-child .call-us p img {
-  filter: contrast(5.5);
 }
 .navbar .navbar-nav .nav-item:last-child .call-us .nav-link {
   padding: 0;
-}
-.navbar .navbar-nav .nav-item:last-child .call-us .number p {
   letter-spacing: 1.44px;
 }
 .navbar .navbar-nav .nav-item:last-child > .nav-link {
@@ -147,7 +143,7 @@ h3 {
   position: relative;
   text-transform: uppercase;
   color: #ffffff;
-  background: rgba(0, 0, 0, 0.64);
+  background: rgba(0, 0, 0, 0.6392156863);
 }
 .hero-wrapper * {
   grid-column: 1/-1;
@@ -156,28 +152,25 @@ h3 {
 .hero-wrapper img {
   z-index: -1;
 }
-.hero-wrapper span {
+.hero-wrapper .hero-text {
   margin-top: 4%;
-  font-family: Montserrat;
-  color: #ffffff;
-  text-align: center;
+}
+.hero-wrapper .hero-text span {
   font-size: 23px;
   font-weight: 300;
-  line-height: normal;
   letter-spacing: 6.785px;
 }
-.hero-wrapper h1 {
+.hero-wrapper .hero-text h1 {
   font-size: 60px;
   font-weight: 300;
   padding: 10px 0;
-  font-family: Montserrat;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }
-.hero-wrapper .btn {
+.hero-wrapper .hero-text .btn {
   color: #ffffff;
   border: 1px solid #ffffff;
 }
-.hero-wrapper .btn:hover {
+.hero-wrapper .hero-text .btn:hover {
   background-color: #ffffff;
   color: black;
 }
@@ -220,10 +213,10 @@ h3 {
 }
 .leading-wrapper .right-section-text h2::after {
   width: 15%;
+  margin-bottom: 1.2%;
 }
 .leading-wrapper .right-section-text h3 {
   color: black;
-  margin-top: 15px;
 }
 .leading-wrapper .right-section-text p {
   color: #808695;
@@ -260,14 +253,7 @@ h3 {
   left: 43%;
 }
 .your-dream-house-wrapper h3 {
-  font-family: Montserrat;
   color: black;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 50.557px;
-  letter-spacing: 2.1px;
-  text-transform: uppercase;
 }
 .your-dream-house-wrapper .card {
   overflow: hidden;
@@ -304,7 +290,7 @@ h3 {
   height: 100%;
   overflow: hidden;
 }
-.your-dream-house-wrapper .bottom-image img {
+.your-dream-house-wrapper .bottom-image .bottom-image img {
   width: 100%;
   height: 75%;
   -o-object-fit: cover;
@@ -325,17 +311,17 @@ h3 {
   padding-bottom: 10%;
   position: relative;
 }
-.review-wrapper .content-wrapper h2 {
+.review-wrapper h2 {
   color: #ffffff;
   position: relative;
   margin-bottom: 2%;
 }
-.review-wrapper .content-wrapper h2::after {
+.review-wrapper h2::after {
   bottom: -24px;
   background-color: #ffffff;
   left: 45%;
 }
-.review-wrapper .content-wrapper h3 {
+.review-wrapper h3 {
   color: #ffffff;
 }
 .review-wrapper .item img {
@@ -453,23 +439,24 @@ h3 {
 .footer-wrapper .container {
   z-index: 2;
 }
-.footer-wrapper .container h6 {
-  font-family: Montserrat;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 300;
+.footer-wrapper .container h3 {
   line-height: 49.927px;
-  letter-spacing: 2.1px;
-  text-transform: uppercase;
 }
-.footer-wrapper .container p {
+.footer-wrapper .container span {
   font-family: Raleway;
   font-size: 17px;
   font-style: normal;
   font-weight: 300;
   line-height: 27px;
 }
-.footer-wrapper .container .contact a {
+.footer-wrapper .container .contact-info {
+  list-style: none;
+  padding: 0;
+}
+.footer-wrapper .container .contact-info li {
+  margin-top: 15px;
+}
+.footer-wrapper .container .contact-info li a {
   color: #FFF;
   font-family: Raleway;
   font-size: 17px;
@@ -478,7 +465,7 @@ h3 {
   line-height: 27px;
   text-decoration: none;
 }
-.footer-wrapper .container .contact a .fa-solid {
+.footer-wrapper .container .contact-info li a .fa-solid {
   margin-right: 2%;
   padding-top: 10px;
   text-align: center;
@@ -488,11 +475,19 @@ h3 {
   border-radius: 50%;
   align-items: center;
 }
-.footer-wrapper .container .contact a img {
+.footer-wrapper .container .contact-info li a img {
   margin-right: 3%;
 }
+.footer-wrapper .container .social-links {
+  list-style: none;
+  padding: 0;
+}
+.footer-wrapper .container .social-links li {
+  display: inline-block;
+  margin: 8px;
+}
 .footer-wrapper .container .card {
-  padding: 5% 1% 6% 0;
+  padding: 5% 1rem 6% 1rem;
   box-shadow: 0px 3.62803px 67.1186px 0px rgba(145, 162, 172, 0.5098039216);
   border-radius: 0;
 }
@@ -541,9 +536,13 @@ h3 {
 .footer-wrapper .container .copyright-section {
   margin-top: 5%;
   margin-bottom: -14%;
-}
-.footer-wrapper .container .copyright-section p {
   text-align: center;
+}
+.footer-wrapper .container .copyright-section span {
+  color: #6A6B70;
+}
+.footer-wrapper .container .copyright-section span a {
+  text-decoration: none;
   color: #6A6B70;
 }
 
